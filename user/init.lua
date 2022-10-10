@@ -26,7 +26,7 @@ local config = {
 	},
 
 	-- Set colorscheme to use
-	colorscheme = "bla",
+	colorscheme = "carbonfox",
 
 	-- Override highlight groups in any theme
 	highlights = {
@@ -63,7 +63,7 @@ local config = {
 	-- Set dashboard header
 	header = {
 		" █████  ███████ ████████ ██████   ██████",
-		"██   ██ ██         ██    ██   ██ ██    ██",
+		"██   ██ █a         ██    ██   ██ ██    ██",
 		"███████ ███████    ██    ██████  ██    ██",
 		"██   ██      ██    ██    ██   ██ ██    ██",
 		"██   ██ ███████    ██    ██   ██  ██████",
@@ -183,6 +183,8 @@ local config = {
 	-- Configure plugins
 	plugins = {
 		init = {
+			"dracula/vim",
+			"EdenEast/nightfox.nvim",
 			-- You can disable default plugins as follows:
 			-- ["goolord/alpha-nvim"] = { disable = true },
 
@@ -206,7 +208,7 @@ local config = {
 			-- },
 		},
 		-- All other entries override the require("<key>").setup({...}) call for default plugins
-		["null-ls"] = function(config) -- overrides `require("null-ls").setup(config)`
+		--[[ ["null-ls"] = function(config) -- overrides `require("null-ls").setup(config)`
 			-- config variable is the default configuration table for the setup functino call
 			local null_ls = require("null-ls")
 			-- Check supported formatters and linters
@@ -219,7 +221,7 @@ local config = {
 			}
 			-- set up null-ls's on_attach function
 			-- NOTE: You can remove this on attach function to disable format on save
-			config.on_attach = function(client)
+					config.on_attach = function(client)
 				if client.resolved_capabilities.document_formatting then
 					vim.api.nvim_create_autocmd("BufWritePre", {
 						desc = "Auto format before save",
@@ -229,7 +231,7 @@ local config = {
 				end
 			end
 			return config -- return final config table to use in require("null-ls").setup(config)
-		end,
+		end, ]]
 		treesitter = { -- overrides `require("treesitter").setup(...)`
 			ensure_installed = { "lua" },
 		},
@@ -241,7 +243,6 @@ local config = {
 		["mason-tool-installer"] = { -- overrides `require("mason-tool-installer").setup(...)`
 			ensure_installed = { "prettier", "stylua" },
 		},
-		["Mofiqul/dracula.nvim"] = {},
 		packer = { -- overrides `require("packer").setup(...)`
 			compile_path = vim.fn.stdpath("data") .. "/packer_compiled.lua",
 		},
