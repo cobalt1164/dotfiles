@@ -126,7 +126,6 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 alias vim="nvim"
 alias nvimconfig="vim ~/.config/nvim/lua"
-alias sshlab="ssh -i ~/.ssh/id_rsa bui00104@apollo.cselabs.umn.edu"
 
 
 
