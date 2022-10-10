@@ -3,7 +3,11 @@
 #	 vi: foldmarker={,} foldmethod=marker foldlevel=0 tabstop=4 filetype=sh
 # }
 
+<<<<<<< HEAD
 General {
+=======
+ General {
+>>>>>>> 65d6480fd644ac49d4fa9fb1f1b7b7e00206b837
 	# Show which segment fails and its exit code.
 	export TMUX_POWERLINE_DEBUG_MODE_ENABLED="false"
 	# Use patched font symbols.
