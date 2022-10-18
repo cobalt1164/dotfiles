@@ -62,7 +62,7 @@ local config = {
 
 	-- Set dashboard header
 	header = {
-		"nvim"
+		"nvim",
 	},
 
 	-- Default theme configuration
@@ -175,6 +175,7 @@ local config = {
 		init = {
 			"dracula/vim",
 			"EdenEast/nightfox.nvim",
+			"lervag/vimtex",
 			-- You can disable default plugins as follows:
 			-- ["goolord/alpha-nvim"] = { disable = true },
 
