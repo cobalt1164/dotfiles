@@ -26,7 +26,7 @@ local config = {
 	},
 
 	-- Set colorscheme to use
-	colorscheme = "carbonfox",
+	colorscheme = "melange",
 
 	-- Override highlight groups in any theme
 	highlights = {
@@ -175,6 +175,7 @@ local config = {
 		init = {
 			"dracula/vim",
 			"EdenEast/nightfox.nvim",
+			"savq/melange",
 			"lervag/vimtex",
 			-- You can disable default plugins as follows:
 			-- ["goolord/alpha-nvim"] = { disable = true },
