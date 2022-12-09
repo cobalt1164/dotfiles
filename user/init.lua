@@ -177,6 +177,7 @@ local config = {
 			"EdenEast/nightfox.nvim",
 			"savq/melange",
 			"lervag/vimtex",
+			"wakatime/vim-wakatime",
 			-- You can disable default plugins as follows:
 			-- ["goolord/alpha-nvim"] = { disable = true },
 
