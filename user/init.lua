@@ -26,7 +26,7 @@ local config = {
 	},
 
 	-- Set colorscheme to use
-	colorscheme = "melange",
+	colorscheme = "tokyonight-storm",
 
 	-- Override highlight groups in any theme
 	highlights = {
@@ -178,6 +178,7 @@ local config = {
 			"savq/melange",
 			"lervag/vimtex",
 			"wakatime/vim-wakatime",
+			"folke/tokyonight.nvim",
 			-- You can disable default plugins as follows:
 			-- ["goolord/alpha-nvim"] = { disable = true },
 
