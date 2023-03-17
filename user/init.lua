@@ -26,7 +26,7 @@ local config = {
 	},
 
 	-- Set colorscheme to use
-	colorscheme = "tokyonight-storm",
+	colorscheme = "gruvbox",
 
 	-- Override highlight groups in any theme
 	highlights = {
@@ -179,6 +179,7 @@ local config = {
 			"lervag/vimtex",
 			"wakatime/vim-wakatime",
 			"folke/tokyonight.nvim",
+			"ellisonleao/gruvbox.nvim",
 			-- You can disable default plugins as follows:
 			-- ["goolord/alpha-nvim"] = { disable = true },
 
